@@ -1,0 +1,415 @@
+2024-04-15 22:00:26 Kafka topic has not been created yet!
+2024-04-15 22:00:28 Kafka topic has not been created yet!
+2024-04-15 22:00:30 Kafka topic has not been created yet!
+2024-04-15 22:00:33 Kafka topic has not been created yet!
+2024-04-15 22:00:37 Picked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties -XX:+ExitOnOutOfMemoryError -XX:ActiveProcessorCount=4 -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xms128m -Xmx256m -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=170368K -XX:ReservedCodeCacheSize=240M -Xss1M -XX:+UnlockDiagnosticVMOptions -XX:NativeMemoryTracking=summary -XX:+PrintNMTStatistics -Dorg.springframework.cloud.bindings.boot.enable=true
+2024-04-15 22:00:36 Setting Active Processor Count to 4
+2024-04-15 22:00:36 Adding $JAVA_OPTS to $JAVA_TOOL_OPTIONS
+2024-04-15 22:00:37 Calculating JVM memory based on 2519028K available memory
+2024-04-15 22:00:37 For more information on this calculation, see https://paketo.io/docs/reference/java-reference/#memory-calculator
+2024-04-15 22:00:37 Calculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=170368K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 2519028K, Thread Count: 50, Loaded Class Count: 27665, Headroom: 0%)
+2024-04-15 22:00:37 Enabling Java Native Memory Tracking
+2024-04-15 22:00:37 Adding 137 container CA certificates to JVM truststore
+2024-04-15 22:00:37 Spring Cloud Bindings Enabled
+2024-04-15 22:00:37 Listening for transport dt_socket at address: 5006
+2024-04-15 22:00:39 19:00:39,090 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.8
+2024-04-15 22:00:39 19:00:39,214 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+2024-04-15 22:00:39 19:00:39,232 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/workspace/BOOT-INF/classes/logback.xml]
+2024-04-15 22:00:39 19:00:39,431 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@9225652 - Adding [jar:file:/workspace/BOOT-INF/lib/app-config-data-0.0.1-SNAPSHOT.jar!/logback-common.xml] to configuration watch list.
+2024-04-15 22:00:39 19:00:39,432 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@654f0d9c - URL [jar:file:/workspace/BOOT-INF/lib/app-config-data-0.0.1-SNAPSHOT.jar!/logback-common.xml] is not of type file
+2024-04-15 22:00:39 19:00:39,690 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+2024-04-15 22:00:39 19:00:39,690 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+2024-04-15 22:00:39 19:00:39,815 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+2024-04-15 22:00:39 19:00:39,815 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+2024-04-15 22:00:39 19:00:39,815 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+2024-04-15 22:00:39 19:00:39,816 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+2024-04-15 22:00:39 19:00:39,816 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-04-15 22:00:39 19:00:39,842 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1782580546 - No compression will be used
+2024-04-15 22:00:39 19:00:39,848 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1782580546 - Will use the pattern ./kafka-to-elastic-service/logs/archived/kafka-to-elastic-service-log.%d{yyyy-MM-dd}.%i.log for the active file
+2024-04-15 22:00:39 19:00:39,915 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6580cfdd - The date pattern is 'yyyy-MM-dd' from file name pattern './kafka-to-elastic-service/logs/archived/kafka-to-elastic-service-log.%d{yyyy-MM-dd}.%i.log'.
+2024-04-15 22:00:39 19:00:39,915 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6580cfdd - Roll-over at midnight.
+2024-04-15 22:00:39 19:00:39,927 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6580cfdd - Setting initial period to 2024-04-15T13:47:04.067Z
+2024-04-15 22:00:39 19:00:39,928 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6580cfdd - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+2024-04-15 22:00:39 19:00:39,928 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6580cfdd - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+2024-04-15 22:00:39 19:00:39,938 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: ./kafka-to-elastic-service/logs/kafka-to-elastic-service.log
+2024-04-15 22:00:39 19:00:39,938 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [./kafka-to-elastic-service/logs/kafka-to-elastic-service.log]
+2024-04-15 22:00:39 19:00:39,942 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE-AUDIT]
+2024-04-15 22:00:39 19:00:39,942 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-04-15 22:00:39 19:00:39,945 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2114684409 - No compression will be used
+2024-04-15 22:00:39 19:00:39,945 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2114684409 - Will use the pattern ./kafka-to-elastic-service/logs/archived/audit.%d{yyyy-MM-dd}.%i.log for the active file
+2024-04-15 22:00:39 19:00:39,946 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63355449 - The date pattern is 'yyyy-MM-dd' from file name pattern './kafka-to-elastic-service/logs/archived/audit.%d{yyyy-MM-dd}.%i.log'.
+2024-04-15 22:00:39 19:00:39,946 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63355449 - Roll-over at midnight.
+2024-04-15 22:00:39 19:00:39,950 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63355449 - Setting initial period to 2024-04-15T19:00:39.523Z
+2024-04-15 22:00:39 19:00:39,950 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63355449 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+2024-04-15 22:00:39 19:00:39,950 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63355449 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+2024-04-15 22:00:39 19:00:39,952 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE-AUDIT] - Active log file name: ./kafka-to-elastic-service/logs/audit.log
+2024-04-15 22:00:39 19:00:39,953 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE-AUDIT] - File property is set to [./kafka-to-elastic-service/logs/audit.log]
+2024-04-15 22:00:39 19:00:39,966 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [audit-log] to INFO
+2024-04-15 22:00:39 19:00:39,970 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [audit-log] to false
+2024-04-15 22:00:39 19:00:39,971 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE-AUDIT] to Logger[audit-log]
+2024-04-15 22:00:39 19:00:39,971 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.microservices.demo] to INFO
+2024-04-15 22:00:39 19:00:39,971 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [com.microservices.demo] to false
+2024-04-15 22:00:39 19:00:39,971 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[com.microservices.demo]
+2024-04-15 22:00:39 19:00:39,971 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[com.microservices.demo]
+2024-04-15 22:00:39 19:00:39,972 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+2024-04-15 22:00:39 19:00:39,972 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+2024-04-15 22:00:39 19:00:39,972 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+2024-04-15 22:00:39 19:00:39,972 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE-AUDIT] to Logger[ROOT]
+2024-04-15 22:00:39 19:00:39,972 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@9353778 - End of configuration.
+2024-04-15 22:00:39 19:00:39,973 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6a28ffa4 - Registering current configuration as safe fallback point
+2024-04-15 22:00:39 
+2024-04-15 22:00:56 19:00:56,254 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@9225652 - Adding [jar:file:/workspace/BOOT-INF/lib/app-config-data-0.0.1-SNAPSHOT.jar!/logback-common.xml] to configuration watch list.
+2024-04-15 22:00:56 19:00:56,254 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@67dba613 - URL [jar:file:/workspace/BOOT-INF/lib/app-config-data-0.0.1-SNAPSHOT.jar!/logback-common.xml] is not of type file
+2024-04-15 22:00:56 19:00:56,289 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+2024-04-15 22:00:56 19:00:56,289 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+2024-04-15 22:00:56 19:00:56,294 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+2024-04-15 22:00:56 19:00:56,294 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+2024-04-15 22:00:56 19:00:56,294 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+2024-04-15 22:00:56 19:00:56,294 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+2024-04-15 22:00:56 19:00:56,294 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-04-15 22:00:56 19:00:56,304 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1465126864 - No compression will be used
+2024-04-15 22:00:56 19:00:56,305 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1465126864 - Will use the pattern ./kafka-to-elastic-service/logs/archived/kafka-to-elastic-service-log.%d{yyyy-MM-dd}.%i.log for the active file
+2024-04-15 22:00:56 19:00:56,308 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5cf8edcf - The date pattern is 'yyyy-MM-dd' from file name pattern './kafka-to-elastic-service/logs/archived/kafka-to-elastic-service-log.%d{yyyy-MM-dd}.%i.log'.
+2024-04-15 22:00:56 19:00:56,308 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5cf8edcf - Roll-over at midnight.
+2024-04-15 22:00:56 19:00:56,312 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5cf8edcf - Setting initial period to 2024-04-15T13:47:04.067Z
+2024-04-15 22:00:56 19:00:56,312 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5cf8edcf - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+2024-04-15 22:00:56 19:00:56,312 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5cf8edcf - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+2024-04-15 22:00:56 19:00:56,313 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: ./kafka-to-elastic-service/logs/kafka-to-elastic-service.log
+2024-04-15 22:00:56 19:00:56,313 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [./kafka-to-elastic-service/logs/kafka-to-elastic-service.log]
+2024-04-15 22:00:56 19:00:56,315 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE-AUDIT]
+2024-04-15 22:00:56 19:00:56,315 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-04-15 22:00:56 19:00:56,325 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1489946715 - No compression will be used
+2024-04-15 22:00:56 19:00:56,325 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1489946715 - Will use the pattern ./kafka-to-elastic-service/logs/archived/audit.%d{yyyy-MM-dd}.%i.log for the active file
+2024-04-15 22:00:56 19:00:56,327 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@629f066f - The date pattern is 'yyyy-MM-dd' from file name pattern './kafka-to-elastic-service/logs/archived/audit.%d{yyyy-MM-dd}.%i.log'.
+2024-04-15 22:00:56 19:00:56,327 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@629f066f - Roll-over at midnight.
+2024-04-15 22:00:56 19:00:56,330 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@629f066f - Setting initial period to 2024-04-15T19:00:56.082Z
+2024-04-15 22:00:56 19:00:56,330 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@629f066f - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+2024-04-15 22:00:56 19:00:56,330 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@629f066f - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+2024-04-15 22:00:56 19:00:56,331 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE-AUDIT] - Active log file name: ./kafka-to-elastic-service/logs/audit.log
+2024-04-15 22:00:56 19:00:56,331 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE-AUDIT] - File property is set to [./kafka-to-elastic-service/logs/audit.log]
+2024-04-15 22:00:56 19:00:56,333 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [audit-log] to INFO
+2024-04-15 22:00:56 19:00:56,333 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1542af63 - Propagating INFO level on Logger[audit-log] onto the JUL framework
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [audit-log] to false
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE-AUDIT] to Logger[audit-log]
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.microservices.demo] to INFO
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1542af63 - Propagating INFO level on Logger[com.microservices.demo] onto the JUL framework
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [com.microservices.demo] to false
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[com.microservices.demo]
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[com.microservices.demo]
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+2024-04-15 22:00:56 19:00:56,357 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1542af63 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+2024-04-15 22:00:56 19:00:56,358 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+2024-04-15 22:00:56 19:00:56,358 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+2024-04-15 22:00:56 19:00:56,358 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE-AUDIT] to Logger[ROOT]
+2024-04-15 22:00:56 19:00:56,358 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@ecfbe91 - End of configuration.
+2024-04-15 22:00:56 19:00:56,358 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@20ed3303 - Registering current configuration as safe fallback point
+2024-04-15 22:00:56 
+2024-04-15 22:00:56 
+2024-04-15 22:00:56   .   ____          _            __ _ _
+2024-04-15 22:00:56  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-04-15 22:00:56 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-04-15 22:00:56  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-04-15 22:00:56   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-04-15 22:00:56  =========|_|==============|___/=/_/_/_/
+2024-04-15 22:00:56  :: Spring Boot ::                (v3.1.2)
+2024-04-15 22:00:56 
+2024-04-15 22:00:56 2024-04-15 19:00:56 INFO  [main] c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication v0.0.1-SNAPSHOT using Java 17.0.7 with PID 482 (/workspace/BOOT-INF/classes started by root in /workspace)
+2024-04-15 22:00:56 2024-04-15 19:00:56 INFO  [main] c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following 1 profile is active: "kafka_to_elastic"
+2024-04-15 22:00:57 2024-04-15 19:00:57 INFO  [main] o.s.c.c.c.ConfigServerConfigDataLoader - Multiple Config Server Urls found listed.
+2024-04-15 22:00:57 2024-04-15 19:00:57 INFO  [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2024-04-15 22:00:57 2024-04-15 19:00:57 INFO  [main] o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service,config-client, profiles=[default], label=null, version=73657a9b3f3b0a4d4f0a031360527cdc08b8cd13, state=null
+2024-04-15 22:00:57 2024-04-15 19:00:57 INFO  [main] o.s.c.c.c.ConfigServerConfigDataLoader - Multiple Config Server Urls found listed.
+2024-04-15 22:00:57 2024-04-15 19:00:57 INFO  [main] o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2024-04-15 22:00:57 2024-04-15 19:00:57 INFO  [main] o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=73657a9b3f3b0a4d4f0a031360527cdc08b8cd13, state=null
+2024-04-15 22:00:58 2024-04-15 19:00:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-04-15 22:00:58 2024-04-15 19:00:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 272 ms. Found 1 Elasticsearch repository interfaces.
+2024-04-15 22:00:59 2024-04-15 19:00:59 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-04-15 22:00:59 2024-04-15 19:00:59 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-04-15 22:01:00 2024-04-15 19:01:00 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=f9b4c838-0cf2-3ef1-88f0-0517f0493fb1
+2024-04-15 22:01:01 2024-04-15 19:01:01 INFO  [main] o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+2024-04-15 22:01:01     auto.include.jmx.reporter = true
+2024-04-15 22:01:01     bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+2024-04-15 22:01:01     client.dns.lookup = use_all_dns_ips
+2024-04-15 22:01:01     client.id = 
+2024-04-15 22:01:01     connections.max.idle.ms = 300000
+2024-04-15 22:01:01     default.api.timeout.ms = 60000
+2024-04-15 22:01:01     metadata.max.age.ms = 300000
+2024-04-15 22:01:01     metric.reporters = []
+2024-04-15 22:01:01     metrics.num.samples = 2
+2024-04-15 22:01:01     metrics.recording.level = INFO
+2024-04-15 22:01:01     metrics.sample.window.ms = 30000
+2024-04-15 22:01:01     receive.buffer.bytes = 65536
+2024-04-15 22:01:01     reconnect.backoff.max.ms = 1000
+2024-04-15 22:01:01     reconnect.backoff.ms = 50
+2024-04-15 22:01:01     request.timeout.ms = 30000
+2024-04-15 22:01:01     retries = 2147483647
+2024-04-15 22:01:01     retry.backoff.ms = 100
+2024-04-15 22:01:01     sasl.client.callback.handler.class = null
+2024-04-15 22:01:01     sasl.jaas.config = null
+2024-04-15 22:01:01     sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-04-15 22:01:01     sasl.kerberos.min.time.before.relogin = 60000
+2024-04-15 22:01:01     sasl.kerberos.service.name = null
+2024-04-15 22:01:01     sasl.kerberos.ticket.renew.jitter = 0.05
+2024-04-15 22:01:01     sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-04-15 22:01:01     sasl.login.callback.handler.class = null
+2024-04-15 22:01:01     sasl.login.class = null
+2024-04-15 22:01:01     sasl.login.connect.timeout.ms = null
+2024-04-15 22:01:01     sasl.login.read.timeout.ms = null
+2024-04-15 22:01:01     sasl.login.refresh.buffer.seconds = 300
+2024-04-15 22:01:01     sasl.login.refresh.min.period.seconds = 60
+2024-04-15 22:01:01     sasl.login.refresh.window.factor = 0.8
+2024-04-15 22:01:01     sasl.login.refresh.window.jitter = 0.05
+2024-04-15 22:01:01     sasl.login.retry.backoff.max.ms = 10000
+2024-04-15 22:01:01     sasl.login.retry.backoff.ms = 100
+2024-04-15 22:01:01     sasl.mechanism = GSSAPI
+2024-04-15 22:01:01     sasl.oauthbearer.clock.skew.seconds = 30
+2024-04-15 22:01:01     sasl.oauthbearer.expected.audience = null
+2024-04-15 22:01:01     sasl.oauthbearer.expected.issuer = null
+2024-04-15 22:01:01     sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-04-15 22:01:01     sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-04-15 22:01:01     sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-04-15 22:01:01     sasl.oauthbearer.jwks.endpoint.url = null
+2024-04-15 22:01:01     sasl.oauthbearer.scope.claim.name = scope
+2024-04-15 22:01:01     sasl.oauthbearer.sub.claim.name = sub
+2024-04-15 22:01:01     sasl.oauthbearer.token.endpoint.url = null
+2024-04-15 22:01:01     security.protocol = PLAINTEXT
+2024-04-15 22:01:01     security.providers = null
+2024-04-15 22:01:01     send.buffer.bytes = 131072
+2024-04-15 22:01:01     socket.connection.setup.timeout.max.ms = 30000
+2024-04-15 22:01:01     socket.connection.setup.timeout.ms = 10000
+2024-04-15 22:01:01     ssl.cipher.suites = null
+2024-04-15 22:01:01     ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-04-15 22:01:01     ssl.endpoint.identification.algorithm = https
+2024-04-15 22:01:01     ssl.engine.factory.class = null
+2024-04-15 22:01:01     ssl.key.password = null
+2024-04-15 22:01:01     ssl.keymanager.algorithm = SunX509
+2024-04-15 22:01:01     ssl.keystore.certificate.chain = null
+2024-04-15 22:01:01     ssl.keystore.key = null
+2024-04-15 22:01:01     ssl.keystore.location = null
+2024-04-15 22:01:01     ssl.keystore.password = null
+2024-04-15 22:01:01     ssl.keystore.type = JKS
+2024-04-15 22:01:01     ssl.protocol = TLSv1.3
+2024-04-15 22:01:01     ssl.provider = null
+2024-04-15 22:01:01     ssl.secure.random.implementation = null
+2024-04-15 22:01:01     ssl.trustmanager.algorithm = PKIX
+2024-04-15 22:01:01     ssl.truststore.certificates = null
+2024-04-15 22:01:01     ssl.truststore.location = null
+2024-04-15 22:01:01     ssl.truststore.password = null
+2024-04-15 22:01:01     ssl.truststore.type = JKS
+2024-04-15 22:01:01 
+2024-04-15 22:01:01 2024-04-15 19:01:01 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.5.1
+2024-04-15 22:01:01 2024-04-15 19:01:01 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 2c6fb6c54472e90a
+2024-04-15 22:01:01 2024-04-15 19:01:01 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1713207661912
+2024-04-15 22:01:04 2024-04-15 19:01:04 WARN  [main] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/kafka/to/elastic/service/consumer/impl/TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in URL [jar:file:/workspace/BOOT-INF/lib/elastic-index-client-0.0.1-SNAPSHOT.jar!/com/microservices/demo/elastic/index/client/service/impl/TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.microservices.demo.elastic.index.client.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticsearchConfig: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception
+2024-04-15 22:01:04 2024-04-15 19:01:04 INFO  [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2024-04-15 22:01:04 2024-04-15 19:01:04 INFO  [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-04-15 22:01:04 2024-04-15 19:01:04 INFO  [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-04-15 22:01:04 2024-04-15 19:01:04 INFO  [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-04-15 22:01:04 2024-04-15 19:01:04 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-04-15 22:01:04 
+2024-04-15 22:01:04 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-15 22:01:04 2024-04-15 19:01:04 ERROR [main] o.s.boot.SpringApplication - Application run failed
+2024-04-15 22:01:04 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/kafka/to/elastic/service/consumer/impl/TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 5: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in URL [jar:file:/workspace/BOOT-INF/lib/elastic-index-client-0.0.1-SNAPSHOT.jar!/com/microservices/demo/elastic/index/client/service/impl/TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.microservices.demo.elastic.index.client.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticsearchConfig: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+2024-04-15 22:01:04     at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+2024-04-15 22:01:04     at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+2024-04-15 22:01:04     at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+2024-04-15 22:01:04     at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+2024-04-15 22:01:04     at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+2024-04-15 22:01:04     at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+2024-04-15 22:01:04     at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+2024-04-15 22:01:04     at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+2024-04-15 22:01:04     at com.microservices.demo.kafka.to.elastic.service.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:11)
+2024-04-15 22:01:04     at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2024-04-15 22:01:04     at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2024-04-15 22:01:04     at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+2024-04-15 22:01:04     at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+2024-04-15 22:01:04     at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+2024-04-15 22:01:04     at org.springframework.boot.loader.Launcher.launch(Launcher.java:95)
+2024-04-15 22:01:04     at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+2024-04-15 22:01:04     at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+2024-04-15 22:01:04 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in URL [jar:file:/workspace/BOOT-INF/lib/elastic-index-client-0.0.1-SNAPSHOT.jar!/com/microservices/demo/elastic/index/client/service/impl/TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.microservices.demo.elastic.index.client.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticsearchConfig: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+2024-04-15 22:01:04     at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:888)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+2024-04-15 22:01:04     ... 27 common frames omitted
+2024-04-15 22:01:04 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.microservices.demo.elastic.index.client.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticsearchConfig: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+2024-04-15 22:01:04     at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:888)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+2024-04-15 22:01:04     ... 41 common frames omitted
+2024-04-15 22:01:04 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception
+2024-04-15 22:01:04     at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+2024-04-15 22:01:04     at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$instantiateClass$5(RepositoryFactorySupport.java:571)
+2024-04-15 22:01:04     at java.base/java.util.Optional.map(Unknown Source)
+2024-04-15 22:01:04     at org.springframework.data.repository.core.support.RepositoryFactorySupport.instantiateClass(RepositoryFactorySupport.java:571)
+2024-04-15 22:01:04     at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:536)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:79)
+2024-04-15 22:01:04     at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:317)
+2024-04-15 22:01:04     at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:279)
+2024-04-15 22:01:04     at org.springframework.data.util.Lazy.getNullable(Lazy.java:245)
+2024-04-15 22:01:04     at org.springframework.data.util.Lazy.get(Lazy.java:114)
+2024-04-15 22:01:04     at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:285)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:69)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+2024-04-15 22:01:04     at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+2024-04-15 22:01:04     ... 52 common frames omitted
+2024-04-15 22:01:04 Caused by: org.springframework.dao.DataAccessResourceFailureException: Connection refused
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.client.elc.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:107)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.client.elc.ElasticsearchExceptionTranslator.translateException(ElasticsearchExceptionTranslator.java:63)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.client.elc.ChildTemplate.execute(ChildTemplate.java:73)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.client.elc.IndicesTemplate.doExists(IndicesTemplate.java:177)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.client.elc.IndicesTemplate.exists(IndicesTemplate.java:169)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:83)
+2024-04-15 22:01:04     at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2024-04-15 22:01:04     at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+2024-04-15 22:01:04     at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+2024-04-15 22:01:04     at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+2024-04-15 22:01:04     at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+2024-04-15 22:01:04     at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+2024-04-15 22:01:04     ... 65 common frames omitted
+2024-04-15 22:01:04 Caused by: java.lang.RuntimeException: Connection refused
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.client.elc.ElasticsearchExceptionTranslator.translateException(ElasticsearchExceptionTranslator.java:62)
+2024-04-15 22:01:04     ... 75 common frames omitted
+2024-04-15 22:01:04 Caused by: java.net.ConnectException: Connection refused
+2024-04-15 22:01:04     at org.elasticsearch.client.RestClient.extractAndWrapCause(RestClient.java:930)
+2024-04-15 22:01:04     at org.elasticsearch.client.RestClient.performRequest(RestClient.java:300)
+2024-04-15 22:01:04     at org.elasticsearch.client.RestClient.performRequest(RestClient.java:288)
+2024-04-15 22:01:04     at co.elastic.clients.transport.rest_client.RestClientTransport.performRequest(RestClientTransport.java:153)
+2024-04-15 22:01:04     at co.elastic.clients.elasticsearch.indices.ElasticsearchIndicesClient.exists(ElasticsearchIndicesClient.java:620)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.client.elc.IndicesTemplate.lambda$doExists$2(IndicesTemplate.java:177)
+2024-04-15 22:01:04     at org.springframework.data.elasticsearch.client.elc.ChildTemplate.execute(ChildTemplate.java:71)
+2024-04-15 22:01:04     ... 74 common frames omitted
+2024-04-15 22:01:04 Caused by: java.net.ConnectException: Connection refused
+2024-04-15 22:01:04     at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+2024-04-15 22:01:04     at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+2024-04-15 22:01:04     at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+2024-04-15 22:01:04     at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+2024-04-15 22:01:04     at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+2024-04-15 22:01:04     at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+2024-04-15 22:01:04     at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+2024-04-15 22:01:04     at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+2024-04-15 22:01:04     at java.base/java.lang.Thread.run(Unknown Source)
+2024-04-15 22:01:04 
+2024-04-15 22:01:04 Native Memory Tracking:
+2024-04-15 22:01:04 
+2024-04-15 22:01:04 Total: reserved=903875282, committed=336317138
+2024-04-15 22:01:04        malloc: 80194258 #373842
+2024-04-15 22:01:04        mmap:   reserved=823681024, committed=256122880
+2024-04-15 22:01:04 
+2024-04-15 22:01:04 -                 Java Heap (reserved=268435456, committed=134217728)
+2024-04-15 22:01:04                             (mmap: reserved=268435456, committed=134217728) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                     Class (reserved=151965028, committed=8113508)
+2024-04-15 22:01:04                             (classes #12090)
+2024-04-15 22:01:04                             (  instance classes #11380, array classes #710)
+2024-04-15 22:01:04                             (malloc=970084 #23170) 
+2024-04-15 22:01:04                             (mmap: reserved=150994944, committed=7143424) 
+2024-04-15 22:01:04                             (  Metadata:   )
+2024-04-15 22:01:04                             (    reserved=67108864, committed=47382528)
+2024-04-15 22:01:04                             (    used=47164000)
+2024-04-15 22:01:04                             (    waste=218528 =0.46%)
+2024-04-15 22:01:04                             (  Class space:)
+2024-04-15 22:01:04                             (    reserved=150994944, committed=7143424)
+2024-04-15 22:01:04                             (    used=6964264)
+2024-04-15 22:01:04                             (    waste=179160 =2.51%)
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                    Thread (reserved=23204768, committed=1319840)
+2024-04-15 22:01:04                             (thread #22)
+2024-04-15 22:01:04                             (stack: reserved=23134208, committed=1249280)
+2024-04-15 22:01:04                             (malloc=41296 #160) 
+2024-04-15 22:01:04                             (arena=29264 #50)
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                      Code (reserved=254706352, committed=17588912)
+2024-04-15 22:01:04                             (malloc=1073840 #5329) 
+2024-04-15 22:01:04                             (mmap: reserved=253632512, committed=16515072) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                        GC (reserved=52726243, committed=47757795)
+2024-04-15 22:01:04                             (malloc=9173475 #4432) 
+2024-04-15 22:01:04                             (mmap: reserved=43552768, committed=38584320) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                  Compiler (reserved=7787004, committed=7787004)
+2024-04-15 22:01:04                             (malloc=18020 #418) 
+2024-04-15 22:01:04                             (arena=7768984 #16)
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                  Internal (reserved=878273, committed=878273)
+2024-04-15 22:01:04                             (malloc=841409 #15664) 
+2024-04-15 22:01:04                             (mmap: reserved=36864, committed=36864) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                     Other (reserved=24, committed=24)
+2024-04-15 22:01:04                             (malloc=24 #2) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                    Symbol (reserved=13759936, committed=13759936)
+2024-04-15 22:01:04                             (malloc=12736736 #306363) 
+2024-04-15 22:01:04                             (arena=1023200 #1)
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -    Native Memory Tracking (reserved=5987584, committed=5987584)
+2024-04-15 22:01:04                             (malloc=6096 #86) 
+2024-04-15 22:01:04                             (tracking overhead=5981488)
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -        Shared class space (reserved=16777216, committed=10985472)
+2024-04-15 22:01:04                             (mmap: reserved=16777216, committed=10985472) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -               Arena Chunk (reserved=37912008, committed=37912008)
+2024-04-15 22:01:04                             (malloc=37912008) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                   Tracing (reserved=33121, committed=33121)
+2024-04-15 22:01:04                             (malloc=393 #10) 
+2024-04-15 22:01:04                             (arena=32728 #1)
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                 Arguments (reserved=165, committed=165)
+2024-04-15 22:01:04                             (malloc=165 #5) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                    Module (reserved=112408, committed=112408)
+2024-04-15 22:01:04                             (malloc=112408 #1194) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                 Safepoint (reserved=8192, committed=8192)
+2024-04-15 22:01:04                             (mmap: reserved=8192, committed=8192) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -           Synchronization (reserved=115544, committed=115544)
+2024-04-15 22:01:04                             (malloc=115544 #796) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -            Serviceability (reserved=997256, committed=997256)
+2024-04-15 22:01:04                             (malloc=997256 #9022) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -                 Metaspace (reserved=67297168, committed=47570832)
+2024-04-15 22:01:04                             (malloc=188304 #93) 
+2024-04-15 22:01:04                             (mmap: reserved=67108864, committed=47382528) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -      String Deduplication (reserved=704, committed=704)
+2024-04-15 22:01:04                             (malloc=704 #8) 
+2024-04-15 22:01:04  
+2024-04-15 22:01:04 -           Object Monitors (reserved=1170832, committed=1170832)
+2024-04-15 22:01:04                             (malloc=1170832 #5629) 
+2024-04-15 22:01:04  
